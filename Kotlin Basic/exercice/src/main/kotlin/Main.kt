@@ -1,6 +1,6 @@
 fun main() {
     println("ajouter un numbre")
-    val rows = 4
+    val rows = readLine()!!.toInt()
     var i = rows - 1
     var j: Int
     var space: Int
