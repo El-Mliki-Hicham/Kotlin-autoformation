@@ -1,26 +1,21 @@
-
-    fun main() {
-        println("ajouter un numbre")
-        val rows= readLine()!!.toInt();
-        var i: Int=0
-        var j: Int
-        var space: Int
-        while (i<rows)
-        {
-            space=i
-            while (space<rows)
-            {
-                print(" ")
-                space++
-            }
-            j=0
-            while (j<i+1)
-            {
-                print("* ")
-                j++
-            }
-            println("")
-            i++
+fun main() {
+    println("ajouter un numbre")
+    val rows = 4
+    var i = rows - 1
+    var j: Int
+    var space: Int
+    while (i >= 0) {
+        space = rows - 1
+        while (space > i) {
+            print(" ")
+            space--
         }
-
+        j = 0
+        while (j < i + 1) {
+            print("* ")
+            j++
+        }
+        println("")
+        i--
     }
+}
