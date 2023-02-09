@@ -1,7 +1,7 @@
 
     fun main() {
         println("ajouter un numbre")
-        val rows= readLine()!!.toInt();
+        val rows= 3;
         var i: Int=0
         var j: Int
         var space: Int
