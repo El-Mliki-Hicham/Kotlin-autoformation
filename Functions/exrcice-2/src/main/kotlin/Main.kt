@@ -2,7 +2,7 @@ var Produit = mutableListOf<String>()
 fun main() {
     var i = 0
     while (i <4) {
-        println("List gestion des produits")
+        println("gestion des produits")
         println("1.Ajouter")
         println("2.Afficher")
         println("3.Supprimer")
@@ -16,7 +16,7 @@ fun main() {
             2 -> Afficher()
             3 -> Supprimer()
             4 -> break
-            else -> { // Note the block
+            else -> { 
                 println("Le nombre n'est pas existé,choisie num 1 à 4 ")
                 println("-----------")
             }
@@ -38,7 +38,7 @@ fun Afficher(){
     println("-----------")
 }
 fun Supprimer(){
-    println("Entrez le nom du produit que vous devez supprimer : ")
+    println("Supprimer un produit : ")
     var delete = readLine()!!.toString()
     Produit.remove(delete)
 }
