@@ -1,22 +1,12 @@
 
 
 
-interface Gestion {
-    fun menu()
+interface IGestion {
     fun Ajouter()
     fun Supprimer()
     fun Afficher()
 }
- class Produits(): Gestion{
-     override fun menu() {
-         println("gestion des produits")
-         println("1.Ajouter")
-         println("2.Afficher")
-         println("3.Supprimer")
-         println("4.Sortie")
-         println("-----------")
-         print("Choisie un nombre : ")
-     }
+ class GestionProduits(): IGestion{
      val Table = mutableListOf<String>()
 
 
